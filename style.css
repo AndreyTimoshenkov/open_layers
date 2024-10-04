@@ -53,3 +53,14 @@ html, body {
 .ol-popup-closer:after {
   content: "✖";
 }
+
+.ol-tooltip {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+.ol-tooltip-measure {
+  font-weight: bold;
+}

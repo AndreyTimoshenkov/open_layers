@@ -7,14 +7,19 @@
     <title>Using OpenLayers with Vite</title>
   </head>
   <body>
+    <div id="popup" class="ol-popup">
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
     <div id="map"></div>
     <div class="buttons">
       <button id="zoom-out">Zoom out -</button>
       <button id="zoom-in">Zoom in +</button>
-    </div>
-    <div id="popup" class="ol-popup">
-      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-      <div id="popup-content"></div>
+      <select id="drawing-type">
+        <option value="Polygon">Polygon</option>
+        <option value="LineString">Line</option>
+      </select>
+      <button id="start-drawing">Start Drawing</button>
     </div>
     <script type="module" src="./main.js"></script>
   </body>
